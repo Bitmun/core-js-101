@@ -51,12 +51,9 @@ function generateOdds(/* len */) {
  *    [0, 1, 2, 3, 4, 5] => [0, 1, 2, 3, 4, 5,   0, 1, 2, 3, 4, 5]
  *    [] => []
  */
-function doubleArray(/* arr */) {
-  throw new Error('Not implemented');
-  // const temp = arr.filter((el) => {
-  //   arr.concat(el);
-  // });
-  // return temp;
+function doubleArray(arr) {
+  const result = arr.concat(arr);
+  return result;
 }
 
 /**
@@ -70,12 +67,9 @@ function doubleArray(/* arr */) {
  *    [-1, 2, -5, -4, 0] => [ 2 ]
  *    [] => []
  */
-function getArrayOfPositives(/* arr */) {
-  throw new Error('Not implemented');
-  // const temp = arr.filter((el) => {
-  //   el >= 0;
-  //   return temp;
-  // }, {});
+function getArrayOfPositives(arr) {
+  const result = arr.filter((item) => item > 0);
+  return result;
 }
 
 /**
@@ -89,12 +83,9 @@ function getArrayOfPositives(/* arr */) {
  *    [ 1, 2, 3, 4, 5 ] => []
  *    [ 'cat, 'dog', 'raccoon' ] => [ 'cat', 'dog', 'raccoon' ]
  */
-function getArrayOfStrings(/* arr */) {
-  throw new Error('Not implemented');
-  // const temp = arr.filter((el) => {
-  //   typeof el === 'string';
-  //   return temp;
-  // }, {});
+function getArrayOfStrings(arr) {
+  const result = arr.filter((item) => typeof item === 'string');
+  return result;
 }
 
 /**
@@ -110,10 +101,9 @@ function getArrayOfStrings(/* arr */) {
  *    [ 1, 2, 3, 4, 5, 'false' ]         => [ 1, 2, 3, 4, 5, 'false' ]
  *    [ false, 0, NaN, '', undefined ]   => [ ]
  */
-function removeFalsyValues(/* arr */) {
-  throw new Error('Not implemented');
-  // const temp = arr.filter(Boolean);
-  // return temp;
+function removeFalsyValues(arr) {
+  const result = arr.filter((item) => item);
+  return result;
 }
 
 /**
@@ -127,8 +117,9 @@ function removeFalsyValues(/* arr */) {
  *    => [ 'PERMANENT-INTERNSHIP', 'GLUTINOUS-SHRIEK', 'MULTIPLICATIVE-ELEVATION' ],
  *    [ 'a', 'b', 'c', 'd', 'e', 'f', 'g' ]  => [ 'A', 'B', 'C', 'D', 'E', 'F', 'G' ]
  */
-function getUpperCaseStrings(/* arr */) {
-  throw new Error('Not implemented');
+function getUpperCaseStrings(arr) {
+  // throw new Error('Not implemented');
+  return arr.map((item) => item.toUpperCase());
 }
 
 /**
@@ -141,8 +132,10 @@ function getUpperCaseStrings(/* arr */) {
  *    [ '', 'a', 'bc', 'def', 'ghij' ]  => [ 0, 1, 2, 3, 4 ]
  *    [ 'angular', 'react', 'ember' ] => [ 7, 5, 5 ]
  */
-function getStringsLength(/* arr */) {
-  throw new Error('Not implemented');
+function getStringsLength(arr) {
+  // throw new Error('Not implemented');
+
+  return arr.map((el) => el.length);
 }
 
 /**

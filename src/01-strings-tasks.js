@@ -181,8 +181,10 @@ function convertToUpperCase(str) {
  *   ],
  *   'info@gmail.com' => ['info@gmail.com']
  */
-function extractEmails() {
-  throw new Error('Not implemented');
+function extractEmails(str) {
+  // throw new Error('Not implemented');
+  const res = str.split(';');
+  return res;
 }
 
 /**
@@ -228,8 +230,14 @@ function getRectangleString(/* width, height */) {
  *    => 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
  *
  */
-function encodeToRot13(/* str */) {
-  throw new Error('Not implemented');
+function encodeToRot13(str) {
+  // throw new Error('Not implemented');
+
+  const input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  const output = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+  const index = (x) => input.indexOf(x);
+  const translate = (x) => (index(x) > -1 ? output[index(x)] : x);
+  return str.split('').map(translate).join('');
 }
 
 /**
@@ -279,6 +287,29 @@ function isString(value) {
  */
 function getCardId(/* value */) {
   throw new Error('Not implemented');
+  // const suits = {
+  //   '♣': 0,
+  //   '♦': 10,
+  //   '♥': 20,
+  //   '♠': 30,
+  // };
+  // const keys = Object.keys(suits);
+  // const value = Object.values(suits);
+  // const values = {
+  //   A: 0,
+  //   2: 1,
+  //   3: 2,
+  //   4: 3,
+  //   5: 4,
+  //   6: 5,
+  //   7: 6,
+  //   8: 7,
+  //   9: 8,
+  //   10: 9,
+  //   J: 10,
+  //   Q: 11,
+  //   K: 12,
+  // };
 }
 
 module.exports = {

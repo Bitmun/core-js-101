@@ -336,12 +336,10 @@ function isCreditCardNumber(/* ccn */) {
 function getDigitalRoot(/* num */) {
   throw new Error('Not implemented');
   // const temp = Array.from(num.toString(), Number);
-  // // let sum;
-  // // sum = temp.map((el) => {
-  // //   sum += el;
-  // //   return sum;
-  // // }, {});
-  // if (sum > 9) getDigitalRoot(sum);
+  // const sum = temp.reduce(function (sum, el) {
+  //   sum += el;
+  // }, 0);
+  // if (sum > 9) return getDigitalRoot(sum);
   // return sum;
 }
 
