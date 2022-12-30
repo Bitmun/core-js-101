@@ -366,31 +366,6 @@ function getDigitalRoot(/* num */) {
  */
 function isBracketsBalanced(/* str */) {
   throw new Error('Not implemented');
-  // const temp = str.split('');
-  // const res = true;
-  // let counterKvadr = 0;
-  // let counterCryg = 0;
-  // let counterKriv = 0;
-  // temp.map((el) => {
-  //   if (el === '[') counterKvadr += 1;
-  //   else if (el === ']') {
-  //     counterKvadr -= 1;
-  //     if (counterKvadr < 0) return false;
-  //   } else if (el === '(') counterCryg += 1;
-  //   else if (el === ')') {
-  //     counterCryg -= 1;
-  //     if (counterCryg < 0) return false;
-  //   } else if (el === '{') counterKriv += 1;
-  //   else if (el === '}') {
-  //     counterKriv -= 1;
-  //     if (counterKriv < 0) return false;
-  //   }
-  //   return true;
-  // });
-  // if (counterKvadr !== 0 || counterKriv !== 0 || counterCryg !== 0) {
-  //   return false;
-  // }
-  // return res;
 }
 
 /**

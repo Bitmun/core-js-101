@@ -20,7 +20,7 @@
  */
 function parseDataFromRfc2822(value) {
   // throw new Error('Not implemented');
-  return new Date(value);
+  return new Date(Date.parse(value));
 }
 /**
  * Parses an ISO 8601 string date representation into date value
@@ -35,7 +35,7 @@ function parseDataFromRfc2822(value) {
  */
 function parseDataFromIso8601(value) {
   // throw new Error('Not implemented');
-  return new Date(value);
+  return new Date(Date.parse(value));
 }
 /**
  * Returns true if specified date is leap year and false otherwise
